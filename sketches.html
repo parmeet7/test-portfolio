@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketches | Parmeet Kaur</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         GALLERY HEADER
+    ========================================== -->
+
+    <header class="gallery-header">
+
+        <a href="index.html" class="back-home">
+            ← BACK TO PORTFOLIO
+        </a>
+
+
+        <div class="gallery-title">
+
+            <p class="section-label">
+                CREATIVE
+            </p>
+
+
+            <h1>
+                Sketches & Creative Work
+            </h1>
+
+
+            <p class="gallery-description">
+                A collection of my portrait sketches, anime illustrations, and creative experiments showcasing my artistic interests and creativity.
+            </p>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================
+         SKETCH CAROUSEL
+    ========================================== -->
+
+    <main class="sketch-carousel">
+
+
+        <!-- PREVIOUS BUTTON -->
+
+        <button
+            class="carousel-btn prev-btn"
+            id="prevSketch"
+            aria-label="Previous sketch"
+        >
+
+            ←
+
+        </button>
+
+
+
+        <!-- =====================================
+             MAIN CAROUSEL
+        ====================================== -->
+
+        <div class="carousel-container">
+
+
+            <!-- COUNTER -->
+
+            <div
+                class="carousel-counter"
+                id="sketchCounter"
+            >
+
+                01 / 06
+
+            </div>
+
+
+
+            <!-- IMAGE -->
+
+            <div class="carousel-image-wrapper">
+
+                <img
+                    id="carouselImage"
+                    class="carousel-image"
+                    src=""
+                    alt="Sketch 1"
+                >
+
+            </div>
+
+
+
+            <!-- IMAGE INFORMATION -->
+
+            <div class="carousel-info">
+
+                <p class="carousel-category">
+                    CREATIVE WORK
+                </p>
+
+
+                <h2 id="carouselTitle">
+                    Sketch 01
+                </h2>
+
+                <a
+        href="https://www.instagram.com/meet_drawz/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="instagram-link"
+    >
+        Explore more of my artwork →
+    </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- NEXT BUTTON -->
+
+        <button
+            class="carousel-btn next-btn"
+            id="nextSketch"
+            aria-label="Next sketch"
+        >
+
+            →
+
+        </button>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         FULLSCREEN IMAGE LIGHTBOX
+    ========================================== -->
+
+    <div
+        class="image-lightbox"
+        id="imageLightbox"
+    >
+
+
+        <!-- CLOSE BUTTON -->
+
+        <button
+            class="lightbox-close"
+            id="lightboxClose"
+            aria-label="Close image"
+        >
+
+            &times;
+
+        </button>
+
+
+
+        <!-- FULL SIZE IMAGE -->
+
+        <img
+            id="lightboxImage"
+            src=""
+            alt="Full size sketch"
+        >
+
+
+    </div>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="gallery-footer">
+
+        <a href="index.html">
+            ← Back to Portfolio
+        </a>
+
+    </footer>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="sketches.js"></script>
+
+
+</body>
+
+</html>

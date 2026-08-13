@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Parmeet Kaur | Certifications</title>
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500;1,600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Certificate Page CSS -->
+    <link rel="stylesheet" href="certificates.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         PAGE LOADER
+    ====================================================== -->
+
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-circle"></div>
+    </div>
+
+
+    <!-- =====================================================
+         TOP BAR
+    ====================================================== -->
+
+    <header class="top-bar">
+
+        <!-- Logo -->
+        <a
+            href="index.html#home"
+            class="logo"
+            aria-label="Go to home"
+        >
+            <span>PK</span>
+        </a>
+
+
+        <!-- Controls -->
+        <div class="top-controls">
+
+            <!-- Theme -->
+            <button
+                class="icon-button"
+                id="themeToggle"
+                aria-label="Toggle theme"
+            >
+                <i class="fa-solid fa-sun"></i>
+            </button>
+
+
+            <!-- Menu -->
+            <button
+                class="icon-button"
+                id="menuButton"
+                aria-label="Open navigation"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN CERTIFICATES PAGE
+    ====================================================== -->
+
+    <main class="certificates-page">
+
+        <div class="background-glow glow-one"></div>
+        <div class="background-glow glow-two"></div>
+
+
+        <section class="certificates-container">
+
+            <!-- Heading -->
+
+            <div class="section-heading reveal">
+
+                <span class="small-heading">
+                    ACHIEVEMENTS
+                </span>
+
+                <h1>
+                    My
+                    <em>Certifications</em>
+                </h1>
+
+                <p>
+                    A collection of certifications and courses
+                    that represent my learning journey.
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 CERTIFICATE CARDS
+            ================================================== -->
+
+            <div
+                class="certifications-grid"
+                id="certificationsGrid"
+            >
+
+                <!-- Cards will be created by JavaScript -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         CERTIFICATE IMAGE MODAL
+    ====================================================== -->
+
+    <div
+        class="certificate-modal"
+        id="certificateModal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-backdrop"></div>
+
+
+        <div
+            class="modal-content"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Certificate preview"
+        >
+
+            <button
+                class="modal-close"
+                id="modalClose"
+                aria-label="Close certificate"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+
+            <img
+                src=""
+                alt="Certificate"
+                id="modalImage"
+            >
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         SIDE NAVIGATION
+    ====================================================== -->
+
+    <div
+        class="navigation-overlay"
+        id="navigationOverlay"
+    >
+
+        <div class="navigation-blur"></div>
+
+
+        <aside class="navigation-panel">
+
+            <button
+                class="navigation-close"
+                id="navigationClose"
+                aria-label="Close navigation"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+
+            <span class="navigation-label">
+                NAVIGATION
+            </span>
+
+
+            <h2>
+                Explore
+            </h2>
+
+
+            <div class="navigation-grid">
+
+                <!-- HOME -->
+
+                <a
+                    href="index.html#home"
+                    class="navigation-card"
+                >
+                    <span class="nav-number">01</span>
+
+                    <i class="fa-solid fa-house"></i>
+
+                    <strong>HOME</strong>
+                </a>
+
+
+                <!-- ABOUT -->
+
+                <a
+                    href="index.html#about"
+                    class="navigation-card"
+                >
+                    <span class="nav-number">02</span>
+
+                    <i class="fa-regular fa-circle-user"></i>
+
+                    <strong>ABOUT</strong>
+                </a>
+
+
+                <!-- RESUME -->
+
+                <a
+                    href="index.html#resume"
+                    class="navigation-card"
+                >
+                    <span class="nav-number">03</span>
+
+                    <i class="fa-regular fa-file-lines"></i>
+
+                    <strong>RESUME</strong>
+                </a>
+
+
+                <!-- PROJECTS -->
+
+                <a
+                    href="index.html#projects"
+                    class="navigation-card"
+                >
+                    <span class="nav-number">04</span>
+
+                    <i class="fa-regular fa-folder-open"></i>
+
+                    <strong>PROJECTS</strong>
+                </a>
+
+
+                <!-- CERTIFICATES -->
+
+                <a
+                    href="certificates.html"
+                    class="navigation-card active"
+                >
+                    <span class="nav-number">05</span>
+
+                    <i class="fa-solid fa-certificate"></i>
+
+                    <strong>CERTIFICATES</strong>
+                </a>
+
+
+                <!-- ART -->
+
+                <a
+                    href="sketches.html"
+                    class="navigation-card"
+                >
+                    <span class="nav-number">06</span>
+
+                    <i class="fa-solid fa-palette"></i>
+
+                    <strong>ART GALLERY</strong>
+                </a>
+
+
+                <!-- CONTACT -->
+
+                <a
+                    href="index.html#contact"
+                    class="navigation-card"
+                >
+                    <span class="nav-number">07</span>
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <strong>CONTACT</strong>
+                </a>
+
+            </div>
+
+
+            <!-- Social links -->
+
+            <div class="social-links">
+
+                <a
+                    href="#"
+                    aria-label="LinkedIn"
+                >
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+
+                <a
+                    href="#"
+                    aria-label="Instagram"
+                >
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+
+                <a
+                    href="#"
+                    aria-label="GitHub"
+                >
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="certificates.js"></script>
+
+</body>
+</html>

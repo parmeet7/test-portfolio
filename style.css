@@ -1137,4 +1137,671 @@ textarea:focus-visible {
   outline-offset: 4px;
 }
 
+/* =========================================================
+   SKETCH GALLERY PAGE
+========================================================= */
 
+
+/* =========================================
+   GALLERY HEADER
+========================================= */
+/* =========================================================
+   SKETCH GALLERY PAGE
+========================================================= */
+
+
+/* =========================================
+   GALLERY HEADER
+========================================= */
+
+.gallery-header {
+
+    padding: 80px 8% 40px;
+
+    text-align: center;
+
+}
+
+
+.back-home {
+
+    display: inline-block;
+
+    margin-bottom: 55px;
+
+    color: inherit;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    letter-spacing: 1.8px;
+
+    font-weight: 600;
+
+    transition: opacity 0.3s ease;
+
+}
+
+
+.back-home:hover {
+
+    opacity: 0.55;
+
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.gallery-title .section-label {
+
+    margin-bottom: 15px;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    opacity: 0.65;
+
+}
+
+
+.gallery-title h1 {
+
+    margin: 0 0 20px;
+
+    font-size: clamp(40px, 6vw, 80px);
+
+    line-height: 1.05;
+
+}
+
+
+.gallery-description {
+
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    line-height: 1.7;
+
+    opacity: 0.65;
+
+}
+
+
+/* =========================================================
+   CAROUSEL
+========================================================= */
+
+.sketch-carousel {
+
+    width: 90%;
+
+    max-width: 1250px;
+
+    margin: 40px auto 100px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 35px;
+
+}
+
+
+/* =========================================
+   CAROUSEL CONTAINER
+========================================= */
+
+.carousel-container {
+
+    width: 750px;
+
+    position: relative;
+
+}
+
+
+/* =========================================
+   IMAGE WRAPPER
+========================================= */
+
+.carousel-image-wrapper {
+
+    width: 100%;
+
+    height: 600px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    background: #202126;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+}
+
+
+/* =========================================
+   CAROUSEL IMAGE
+========================================= */
+
+.carousel-image {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+
+    cursor: pointer;
+
+    transition:
+
+        opacity 0.25s ease,
+
+        transform 0.4s ease;
+
+}
+
+
+.carousel-image:hover {
+
+    transform: scale(1.015);
+
+}
+
+
+/* =========================================
+   COUNTER
+========================================= */
+
+.carousel-counter {
+
+    position: absolute;
+
+    top: 18px;
+
+    left: 18px;
+
+    z-index: 5;
+
+    padding: 8px 13px;
+
+    background: rgba(0, 0, 0, 0.7);
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================================
+   IMAGE INFO
+========================================= */
+
+.carousel-info {
+
+    padding: 25px 5px;
+
+}
+
+
+.carousel-category {
+
+    margin: 0 0 8px;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    opacity: 0.55;
+
+}
+
+
+.carousel-info h2 {
+
+    margin: 0;
+
+    font-size: 28px;
+
+    font-weight: 500;
+
+}
+
+
+/* =========================================================
+   CAROUSEL BUTTONS
+========================================================= */
+
+.carousel-btn {
+
+    width: 58px;
+
+    height: 58px;
+
+    flex-shrink: 0;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    background: transparent;
+
+    color: inherit;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition:
+
+        background 0.3s ease,
+
+        transform 0.3s ease,
+
+        border-color 0.3s ease;
+
+}
+
+
+.carousel-btn:hover {
+
+    background: rgba(255, 255, 255, 0.1);
+
+    border-color: rgba(255, 255, 255, 0.7);
+
+    transform: scale(1.08);
+
+}
+
+
+.carousel-btn:active {
+
+    transform: scale(0.95);
+
+}
+
+
+/* =========================================================
+   FULLSCREEN LIGHTBOX
+========================================================= */
+
+.image-lightbox {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    background: rgba(0, 0, 0, 0.95);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 40px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+
+        opacity 0.3s ease,
+
+        visibility 0.3s ease;
+
+}
+
+
+/* =========================================
+   ACTIVE LIGHTBOX
+========================================= */
+
+.image-lightbox.active {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+
+/* =========================================
+   FULLSCREEN IMAGE
+========================================= */
+
+.image-lightbox img {
+
+    max-width: 92vw;
+
+    max-height: 90vh;
+
+    width: auto;
+
+    height: auto;
+
+    object-fit: contain;
+
+    transform: scale(0.85);
+
+    transition: transform 0.35s ease;
+
+}
+
+
+.image-lightbox.active img {
+
+    transform: scale(1);
+
+}
+
+
+/* =========================================
+   CLOSE BUTTON
+========================================= */
+
+.lightbox-close {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 30px;
+
+    width: 48px;
+
+    height: 48px;
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+    background: rgba(0, 0, 0, 0.5);
+
+    color: white;
+
+    font-size: 32px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition:
+
+        background 0.3s ease,
+
+        transform 0.3s ease;
+
+}
+
+
+.lightbox-close:hover {
+
+    background: rgba(255, 255, 255, 0.15);
+
+    transform: rotate(90deg);
+
+}
+
+
+/* =========================================
+   DISABLE SCROLL WHEN LIGHTBOX OPEN
+========================================= */
+
+body.lightbox-open {
+
+    overflow: hidden;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.gallery-footer {
+
+    text-align: center;
+
+    padding: 20px 0 70px;
+
+}
+
+
+.gallery-footer a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    letter-spacing: 1.5px;
+
+    transition: opacity 0.3s ease;
+
+}
+
+
+.gallery-footer a:hover {
+
+    opacity: 0.55;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+
+    .sketch-carousel {
+
+        gap: 15px;
+
+    }
+
+
+    .carousel-container {
+
+        width: 650px;
+
+    }
+
+
+    .carousel-image-wrapper {
+
+        height: 520px;
+
+    }
+
+
+    .carousel-btn {
+
+        width: 50px;
+
+        height: 50px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+
+    .gallery-header {
+
+        padding: 50px 7% 30px;
+
+    }
+
+
+    .back-home {
+
+        margin-bottom: 40px;
+
+    }
+
+
+    .sketch-carousel {
+
+        width: 94%;
+
+        gap: 8px;
+
+    }
+
+
+    .carousel-container {
+
+        width: 100%;
+
+    }
+
+
+    .carousel-image-wrapper {
+
+        height: 430px;
+
+    }
+
+
+    .carousel-btn {
+
+        width: 42px;
+
+        height: 42px;
+
+        font-size: 18px;
+
+    }
+
+
+    .carousel-info {
+
+        padding: 18px 3px;
+
+    }
+
+
+    .carousel-info h2 {
+
+        font-size: 22px;
+
+    }
+
+
+    .lightbox-close {
+
+        top: 15px;
+
+        right: 15px;
+
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+
+    .carousel-image-wrapper {
+
+        height: 350px;
+
+    }
+
+
+    .carousel-btn {
+
+        width: 36px;
+
+        height: 36px;
+
+        font-size: 16px;
+
+    }
+
+
+    .gallery-title h1 {
+
+        font-size: 38px;
+
+    }
+
+}
+
+.instagram-link {
+    display: inline-block;
+    margin-top: 14px;
+
+    color: #b85cff;
+    text-decoration: none;
+
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+    transition: all 0.25s ease;
+}
+
+.instagram-link:hover {
+    color: white;
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   ENABLE SCROLLING ON SKETCHES PAGE
+========================================================= */
+
+html,
+body {
+    min-height: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    overflow-y: auto !important;
+}
