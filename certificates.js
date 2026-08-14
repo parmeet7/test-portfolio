@@ -15,7 +15,7 @@ const certificates = [
             "Certificate in data science fundamentals and analytical concepts.",
 
         image:
-            "/assets/certificates/Data science certification.png"
+            "assets/certificates/Data science certification.png"
     },
 
 
@@ -30,7 +30,7 @@ const certificates = [
             "Certification focused on clearing the basics of python concepts.",
 
         image:
-            "/assets/certificates/Python.png"
+            "assets/certificates/Python.png"
     },
 
 
@@ -45,7 +45,7 @@ const certificates = [
             "Certification covering all the essentials of Cognos analytics including reporting and dashboards.",
 
         image:
-            "/assets/certificates/Cognos Analytics.png"
+            "assets/certificates/Cognos Analytics.png"
     },
 
 
@@ -60,7 +60,7 @@ const certificates = [
             "Certificate on gaining knowledge on business Intelligence tools.",
 
         image:
-            "/assets/certificates/Business Intelligence.png"
+            "assets/certificates/Business Intelligence.png"
     },
 
 
@@ -75,7 +75,7 @@ const certificates = [
             "Gained hands-on experience working with MongoDB, NodeJS, React and Express .",
 
         image:
-            "/assets/certificates/MERN.png"
+            "assets/certificates/MERN.png"
     },
 
 
@@ -90,7 +90,7 @@ const certificates = [
             "Gained knowledge of Predictive Analytics using SPSS Modeler.",
 
         image:
-            "/assets/certificates/predicitive.png"
+            "assets/certificates/predicitive.png"
     }
 
 ];
